@@ -15,11 +15,47 @@
     color: #000000;
 }
 
+.ms_light_text {
+    color: #ffffff;
+}
+
+.ms_dark_text_300 {
+    color: #727272;
+}
+
+.ms_blue_text {
+    color: #167ed2;
+}
+
 .ms_bg_gray_700 {
     background-color: #363636;
 }
 
+.ms_bg_white {
+    background-color: #ffffff;
+}
+
+.ms_bg_orange {
+    background-color: #cd3d0f;
+}
+
+/* typo */
+.ms_h2 {
+    margin: calc(1.325rem + .9vw) 0;
+}
+
+.ms_small_font {
+    font-size: 0.7rem;
+}
+
 /* header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
 .header_top {
     height: 36px;
     padding: 10px;
@@ -32,4 +68,33 @@
 
 .ms_hamburger {
     border: 1px solid #e5e5e5;
+}
+
+/* main */
+main {
+    margin-top: 112px;
+}
+
+/* hero */
+.hero_top {
+    background-image: url('../img/jumbo-bg.png');
+    background-position: center top;
+    background-size: cover;
+    padding-top: 200px;
+}
+
+.hero_top .ms_logo {
+   width: 55%;
+}
+
+.hero_card {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 15px 0;
+}
+
+.hero_card img {
+    width: 100%;
 }
