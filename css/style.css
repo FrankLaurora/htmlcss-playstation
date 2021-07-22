@@ -1,3 +1,35 @@
+/* common */
 * {
     font-family: Arial, sans-serif;
+}
+
+.ms_btn {
+    padding: 6px 10px 8px;
+    border-radius: 25px;
+    border: none;
+    color: #ffffff;
+}
+
+/* palette */
+.ms_dark_text {
+    color: #000000;
+}
+
+.ms_bg_gray_700 {
+    background-color: #363636;
+}
+
+/* header */
+.header_top {
+    height: 36px;
+    padding: 10px;
+}
+
+.header_top img {
+    height: 100%;
+    vertical-align: baseline;
+}
+
+.ms_hamburger {
+    border: 1px solid #e5e5e5;
 }
