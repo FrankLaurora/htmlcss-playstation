@@ -41,6 +41,10 @@
     background-color: #1f1f1f;
 }
 
+.ms_bg_gray {
+    background-color: #bebcbb;
+}
+
 .ms_bg_gray_700 {
     background-color: #363636;
 }
@@ -55,6 +59,10 @@
 
 .ms_bg_blue {
     background-color: #2d64e6;
+}
+
+.ms_bg_blue_700 {
+    background-color: #161c3b;
 }
 
 /* typo */
@@ -172,4 +180,9 @@ main {
 .new_releases .game_card img {
     width: 100%;
     border-radius: 20px;
+}
+
+/* social */
+.social_logo {
+    width: 10%;
 }
