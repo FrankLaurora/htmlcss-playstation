@@ -11,6 +11,11 @@
     width: fit-content;
 }
 
+.ms_spotlight {
+    background-position: center top;
+    background-size: cover;
+}
+
 /* palette */
 .ms_dark_text {
     color: #000000;
@@ -30,6 +35,10 @@
 
 .ms_bg_dark {
     background-color: #000000;
+}
+
+.ms_bg_dark_300 {
+    background-color: #1f1f1f;
 }
 
 .ms_bg_gray_700 {
@@ -96,14 +105,11 @@ main {
 }
 
 /* hero */
-.hero_top {
+.hero_top.ms_spotlight {
     background-image: url('../img/jumbo-bg.png');
-    background-position: center top;
-    background-size: cover;
-    padding-top: 200px;
 }
 
-.hero_top .ms_logo {
+.hero_top .ms_logo, .ms_spotlight .ms_logo {
    width: 55%;
 }
 
@@ -156,4 +162,14 @@ main {
 
 .product_card:hover::after {
     background-color: transparent;
+}
+
+/* new releases */
+.new_releases.ms_spotlight {
+    background-image: url('../img/it-takes-two-hero-banner-desktop.jpg');
+}
+
+.new_releases .game_card img {
+    width: 100%;
+    border-radius: 20px;
 }
