@@ -1,144 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <!-- /bootstrap CSS -->
-        <link rel="stylesheet" href="css/style.css">
-        <!-- fontawesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- /fontawesome -->
-        <title>PlayStation</title>
-    </head>
-    <body>
-        <!-- fixed header with top and bottom halves -->
-        <header>
-            <div class="header_top text-end bg-dark">
-                <img src="img/sony_logo.svg" alt="Sony logo">
-            </div>
-            <div class="header_bottom ms_bg_white">
-                <nav class="navbar navbar-expand-lg align-items-center ms_dark_text">
-                    <div class="container-fluid">
-                      <a class="navbar-brand" href="#"><img src="img/play_logo.svg" alt="PlayStation logo"></a>
-                      <button class="navbar-toggler navbar-light ms_hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- /bootstrap CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- /fontawesome -->
+    <title>PlayStation</title>
+</head>
+
+<body>
+    <!-- fixed header with top and bottom halves -->
+    <header>
+        <div class="header_top text-end ms_bg_dark">
+            <img class="ms_logo" src="img/sony_logo.svg" alt="Sony logo">
+        </div>
+        <div class="header_bottom ms_bg_white">
+            <nav class="navbar navbar-expand-lg align-items-center ms_dark_text">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="img/play_logo.svg" alt="PlayStation logo"></a>
+                    <button class="navbar-toggler navbar-light ms_hamburger" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                          <li class="nav-item">
-                            <a class="nav-link ms_dark_text" href="#">Link</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link ms_dark_text" href="#">Link</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link ms_dark_text" href="#">Link</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link ms_dark_text" href="#">Link</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link ms_dark_text" href="#">Link</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link ms_dark_text" href="#">Link</a>
-                          </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle  ms_dark_text" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Giochi
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle  ms_dark_text" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Hardware
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle  ms_dark_text" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Servizi
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle  ms_dark_text" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Novità
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle  ms_dark_text" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Fai acquisti
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle  ms_dark_text" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Supporto
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                </ul>
+                            </li>
                         </ul>
                         <div class="collapse navbar-collapse flex-grow-0" id="navbarNavAltMarkup">
                             <div class="navbar-nav align-items-center">
-                                <a class="nav-link ms_dark_text" aria-current="page" href="#">My PlayStation</a>
-                                <button class="btn ms_btn ms_bg_gray_700" type="button">Accedi</button>
-                                <a class="nav-link ms_dark_text" aria-current="page" href="#"><i class="fas fa-search"></i></a>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle  ms_dark_text" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        My PlayStation
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                    </ul>
+                                </li>
+                                <button class="btn mx-3 ms_btn ms_bg_gray_700" type="button">Accedi</button>
+                                <a class="nav-link" aria-current="page" href="#">
+                                    <img class="ms_logo" src="img/lens.svg" alt="Search icon">
+                                </a>
                             </div>
                         </div>
-                      </div>
                     </div>
-                  </nav>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- /fixed header with top and bottom halves -->
+    <!-- main with many sections -->
+    <main>
+        <!-- hero -->
+        <section class="hero_top ms_light_text">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img class="ms_logo" src="img/returnal-hero-banner-logo.png" alt="Returnal logo">
+                        <h2 class="ms_h2">Rompi il cerchio</h2>
+                        <p class="mb-4">
+                            Rialzati dopo ogni sconfitta e affronta una nuova sfida con ogni rinascita in questo
+                            esplosivo thriller fantascientifico, disponibile in esclusiva su PS5.
+                        </p>
+                        <button class="ms_btn ms_bg_orange mb-5" type="button">Acquista ora</button>
+                    </div>
+                </div>
             </div>
-        </header>
-        <!-- /fixed header with top and bottom halves -->
-        <!-- main with many sections -->
-        <main>
-            <!-- hero -->
-            <section class="hero_top ms_light_text">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <img class="ms_logo" src="img/returnal-hero-banner-logo.png" alt="">
-                            <h2 class="ms_h2">Rompi il cerchio</h2>
-                            <p class="mb-4">
-                                Rialzati dopo ogni sconfitta e affronta una nuova sfida con ogni rinascita in questo esplosivo thriller fantascientifico, disponibile in esclusiva su PS5.
-                            </p>
-                            <button class="ms_btn ms_bg_orange mb-5" type="button">Acquista ora</button>
+        </section>
+        <section class="hero_bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-sm-4 col-lg-2">
+                        <div class="hero_card active">
+                            <img src="img/returnal-listing-thumb-01-ps5.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2">
+                        <div class="hero_card">
+                            <img src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2">
+                        <div class="hero_card">
+                            <img src="img/returnal-listing-thumb-01-ps5.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2">
+                        <div class="hero_card">
+                            <img src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2">
+                        <div class="hero_card">
+                            <img src="img/returnal-listing-thumb-01-ps5.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2">
+                        <div class="hero_card">
+                            <img src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="">
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="hero_bottom">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-6 col-sm-4 col-lg-2">
-                            <div class="hero_card">
-                                <img src="img/returnal-listing-thumb-01-ps5.jpg" alt="">
-                            </div>
+            </div>
+        </section>
+        <!-- /hero -->
+        <!-- introducing PS5 section -->
+        <section class="mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <span class="ms_small_font ms_blue_text"><strong>PLAY HAS NO LIMITS</strong></span>
+                    </div>
+                    <div class="col-12 text-center">
+                        <h2 class="ms_h2 mt-0">Ecco la PlayStation 5</h2>
+                    </div>
+                    <div class="col-12 text-center">
+                        <p class="ms_dark_text_300">
+                            Tuffati in nuove possibilità di gioco completamente inaspettate
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 d-flex flex-column justify-content-center">
+                        <h2 class="ms_h2">
+                            Console PlayStation 5
+                        </h2>
+                        <p class="mb-4 ms_dark_text_300">
+                            Sperimenta la nuova generazione di incredibili giochi PlayStation.
+                        </p>
+                        <button class="ms_btn ms_bg_blue" type="button">Maggiori informazioni</button>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="ms_product_big" src="img/playstation-5-thumb.png" alt="PlayStation 5 picture">
+                    </div>
+                </div>
+                <div class="row row-cols-3 row-cols-md-5">
+                    <div class="col">
+                        <div class="product_card active">
+                            <img class="ms_product_small" src="img/playstation-5-thumb.png" alt="PlayStation 5 picture">
+                            <p class="my-3"><strong>Console PS5</strong></p>
                         </div>
-                        <div class="col-6 col-sm-4 col-lg-2">
-                            <div class="hero_card">
-                                <img src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="">
-                            </div>
+                    </div>
+                    <div class="col">
+                        <div class="product_card">
+                            <img class="ms_product_small" src="img/joypad-thumb.png" alt="PlayStation 5 picture">
+                            <p class="my-3"><strong>Controller wireless DualSense&trade;</strong></p>
                         </div>
-                        <div class="col-6 col-sm-4 col-lg-2">
-                            <div class="hero_card">
-                                <img src="img/returnal-listing-thumb-01-ps5.jpg" alt="">
-                            </div>
+                    </div>
+                    <div class="col">
+                        <div class="product_card">
+                            <img class="ms_product_small" src="img/headset-thumb.png" alt="PlayStation 5 picture">
+                            <p class="my-3"><strong>Cuffie wireless con microfono PULSE 3&trade;</strong></p>
                         </div>
-                        <div class="col-6 col-sm-4 col-lg-2">
-                            <div class="hero_card">
-                                <img src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="">
-                            </div>
+                    </div>
+                    <div class="col">
+                        <div class="product_card">
+                            <img class="ms_product_small" src="img/remote-thumb.png" alt="PlayStation 5 picture">
+                            <p class="my-3"><strong>Telecomando Media</strong></p>
                         </div>
-                        <div class="col-6 col-sm-4 col-lg-2">
-                            <div class="hero_card">
-                                <img src="img/returnal-listing-thumb-01-ps5.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-4 col-lg-2">
-                            <div class="hero_card">
-                                <img src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="">
-                            </div>
+                    </div>
+                    <div class="col">
+                        <div class="product_card">
+                            <img class="ms_product_small" src="img/camera-thumb.jpg" alt="PlayStation 5 picture">
+                            <p class="my-3"><strong>Telecamera HD</strong></p>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- /hero -->
-            <!-- introducing PS5 section -->
-            <section class="mt-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 text-center">
-                            <span class="ms_small_font ms_blue_text"><strong>PLAY HAS NO LIMITS</strong></span>
-                        </div>
-                        <div class="col-12 text-center">
-                            <h2 class="ms_h2 mt-0">Ecco la PlayStation 5</h2>
-                        </div>
-                        <div class="col-12 text-center">
-                            <p class="ms_dark_text_300">
-                                Tuffati in nuove possibilità di gioco completamente inaspettate
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- /introducing PS5 section -->
-        </main>
-        <!-- /main with many sections -->
+            </div>
+        </section>
+        <!-- /introducing PS5 section -->
+    </main>
+    <!-- /main with many sections -->
 
 
-        <!-- bootstrap JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        <!-- /bootstrap JS -->
-    </body>
+    <!-- bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <!-- /bootstrap JS -->
+</body>
+
 </html>

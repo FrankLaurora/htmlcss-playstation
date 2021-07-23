@@ -8,6 +8,7 @@
     border-radius: 25px;
     border: none;
     color: #ffffff;
+    width: fit-content;
 }
 
 /* palette */
@@ -27,6 +28,10 @@
     color: #167ed2;
 }
 
+.ms_bg_dark {
+    background-color: #000000;
+}
+
 .ms_bg_gray_700 {
     background-color: #363636;
 }
@@ -37,6 +42,10 @@
 
 .ms_bg_orange {
     background-color: #cd3d0f;
+}
+
+.ms_bg_blue {
+    background-color: #2d64e6;
 }
 
 /* typo */
@@ -61,9 +70,20 @@ header {
     padding: 10px;
 }
 
-.header_top img {
+.header_top .ms_logo{
     height: 100%;
     vertical-align: baseline;
+}
+
+.header_bottom .ms_logo {
+    width: 1.5rem;
+}
+
+.dropdown-toggle::after {
+    border: none;
+    content: url('../img/chevron-down-solid.svg');
+    width: 0.7rem;
+    vertical-align: middle;
 }
 
 .ms_hamburger {
@@ -88,13 +108,52 @@ main {
 }
 
 .hero_card {
-    position: relative;
     width: 100%;
-    overflow: hidden;
-    border-radius: 15px;
+    border-radius: 20px;
     margin: 15px 0;
+    padding: 3px;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+.hero_card.active {
+    border: 3px solid #2d64e6;
 }
 
 .hero_card img {
     width: 100%;
+    border-radius: 20px;
+}
+
+/* introducing PS5 */
+.ms_product_big {
+    width: 100%;
+}
+
+.ms_product_small{
+    width: 60%;
+}
+
+.product_card{
+    position: relative;
+    text-align: center;
+}
+
+.product_card.active {
+    border-bottom: 2px solid #2d64e6;
+}
+
+.product_card:not(.active)::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #ffffff80;
+    transition: background-color 1s;
+}
+
+.product_card:hover::after {
+    background-color: transparent;
 }
