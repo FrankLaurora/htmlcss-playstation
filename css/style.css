@@ -16,6 +16,14 @@
     background-size: cover;
 }
 
+.ms_list {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+}
+
 /* palette */
 .ms_dark_text {
     color: #000000;
@@ -59,6 +67,10 @@
 
 .ms_bg_blue {
     background-color: #2d64e6;
+}
+
+.ms_bg_blue_500 {
+    background-color: #00439c;
 }
 
 .ms_bg_blue_700 {
@@ -185,4 +197,15 @@ main {
 /* social */
 .social_logo {
     width: 10%;
+}
+
+/* footer */
+.region_logo {
+    width: 1.3rem;
+    vertical-align: middle;
+    margin-right: 1rem;
+}
+
+.sie_logo {
+    width: 130px;
 }
