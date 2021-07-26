@@ -9,6 +9,7 @@
     border: none;
     color: #ffffff;
     width: fit-content;
+    transition: box-shadow 0.1s;
 }
 
 .ms_spotlight {
@@ -20,8 +21,25 @@
     list-style: none;
 }
 
-li a {
+a:hover {
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a {
     text-decoration: none;
+}
+
+.small_container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.ms_info_link {
+    text-decoration: underline;
 }
 
 /* palette */
@@ -37,8 +55,11 @@ li a {
     color: #727272;
 }
 
-.ms_blue_text {
+.ms_blue_text_300 {
     color: #167ed2;
+}
+.ms_blue_text {
+    color: #2d64e6;
 }
 
 .ms_bg_dark {
@@ -77,6 +98,24 @@ li a {
     background-color: #161c3b;
 }
 
+.ms_btn.ms_bg_gray_700:hover {
+    color: #ffffff;
+    background-color: #727272;
+    box-shadow: 0px 0px 0px 2px #727272 inset, 0px 0px 0px 4px #ffffff inset;
+}
+
+.ms_btn.ms_bg_orange:hover {
+    box-shadow: 0px 0px 0px 2px #cd3d0f inset, 0px 0px 0px 4px #000000 inset;
+}
+
+.ms_btn.ms_bg_blue:hover{
+    box-shadow: 0px 0px 0px 2px #2d64e6 inset, 0px 0px 0px 4px #ffffff inset;
+}
+
+.ms_btn.ms_bg_white:hover {
+    box-shadow: 0px 0px 0px 2px #ffffff inset, 0px 0px 0px 4px #161c3b inset;
+}
+
 /* typo */
 .ms_h2 {
     margin: calc(1.325rem + .9vw) 0;
@@ -113,6 +152,15 @@ header {
     content: url('../img/chevron-down-solid.svg');
     width: 0.7rem;
     vertical-align: middle;
+    transition: 0.3s;
+}
+
+.show.dropdown-toggle::after {
+    border: none;
+    content: url('../img/chevron-down-solid-hover.svg');
+    width: 0.7rem;
+    vertical-align: middle;
+    transform: rotate(180deg);
 }
 
 .ms_hamburger {
@@ -136,14 +184,18 @@ main {
 .hero_card {
     width: 100%;
     border-radius: 20px;
-    margin: 15px 0;
     padding: 3px;
     overflow: hidden;
     box-sizing: content-box;
+    transition: transform 0.3s;
+}
+
+.hero_card:hover {
+    transform: translateY(-10px);
 }
 
 .hero_card.active {
-    border: 3px solid #2d64e6;
+    box-shadow: 0px 0px 0px 2px #2d64e6;
 }
 
 .hero_card img {
@@ -161,27 +213,20 @@ main {
 }
 
 .product_card{
-    position: relative;
     text-align: center;
+    transition: opacity 0.5s;
 }
 
-.product_card.active {
+.ms_col_active {
     border-bottom: 2px solid #2d64e6;
 }
 
-.product_card:not(.active)::after {
-    position: absolute;
-    content: '';
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: #ffffff80;
-    transition: background-color 0.5s;
+.product_card:not(.active) {
+    opacity: 0.5;
 }
 
-.product_card:hover::after {
-    background-color: transparent;
+.product_card:hover {
+    opacity: 1;
 }
 
 /* new releases */
@@ -192,11 +237,6 @@ main {
 .new_releases .game_card img {
     width: 100%;
     border-radius: 20px;
-}
-
-/* social */
-.social_logo {
-    width: 10%;
 }
 
 /* footer */
