@@ -74,6 +74,10 @@ a {
     background-color: #bebcbb;
 }
 
+.ms_bg_gray_300 {
+    background-color: #d9dadc;
+}
+
 .ms_bg_gray_700 {
     background-color: #363636;
 }
@@ -110,6 +114,10 @@ a {
 
 .ms_btn.ms_bg_blue:hover{
     box-shadow: 0px 0px 0px 2px #2d64e6 inset, 0px 0px 0px 4px #ffffff inset;
+}
+
+.ms_btn.ms_bg_gray_300:hover {
+    box-shadow: 0px 0px 2px 2px #d9dadc, 0px 0px 0px 2px #d9dadc inset, 0px 0px 0px 4px #bebcbb inset;
 }
 
 .ms_btn.ms_bg_white:hover {
